@@ -27,8 +27,7 @@ vaptcha({
     vaptchaObj.listen('close', function () {
         //验证弹窗关闭触发
     })
-    $('.vsubmit.vbtn').on('click', function () {
-        	//alert("OK")
-   	    	vaptchaObj.validate()
+    $('button.vsubmit.vbtn').on('click', function () {
+   	    vaptchaObj.validate()
     })
 })
