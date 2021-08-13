@@ -27,7 +27,7 @@ vaptcha({
     vaptchaObj.listen('close', function () {
         //验证弹窗关闭触发
     })
-    $('#veditor').on('click', function () {
-   	    vaptchaObj.validate()
+    $('#veditor').on('focus', function () {
+        vaptchaObj.validate()
     })
 })
